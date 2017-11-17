@@ -43,5 +43,28 @@ print(bb.split())
 
 
 
-#  list dict
+#list: mutable sequences of objects
+l = [1, 8, 2]
+print(l)
+
+l2 = ['apple',  3, 'asdf']
+print(l2)
+
+l3 = []
+l3.append(1.23)
+l3.append(3.232)
+print(l3)
+
+l3.append('asdf')
+print(l3)
+
+l4 = list("oguzozcan")
+print(l4)
+
+l5 = ['oguz',
+      'ozcan',]
+print(l5)
+
+#dict mutable mapping of keys to values, unordered
+d = {k1: v1, k2: v2}
 
