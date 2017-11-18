@@ -66,5 +66,5 @@ l5 = ['oguz',
 print(l5)
 
 #dict mutable mapping of keys to values, unordered
-d = {k1: v1, k2: v2}
-
+d = {'oguz': '123', 'ozcan': '456'}
+print(d['oguz'])
