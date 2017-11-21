@@ -1,8 +1,24 @@
+#!/usr/bin/env python3
+""""Retrieve and print words from a URL
+
+Usage:
+
+    python3 words.py <URL>
+"""
+
 import sys
 from urllib.request import urlopen
-
+#Sparse is better than dense PEP8
 
 def fetch_words(url):
+    """Fetch a list of words from a URL. help(fetch_words)
+    Google Python Style Guide
+    Args:
+        url: The URL of a UTF-8 tet document.
+
+    Returns:
+        A list of strings containing the words from the doc.
+    """
     with urlopen(url) as story:
         story_words = []
         for line in story:
@@ -17,7 +33,7 @@ def print_items(items):
 
 
 def main():
-    url = sys.argv[1]
+    url = sys.argv[1] #The 0th arg is the module filename
     words = fetch_words(url)
     print_items(words)
 
