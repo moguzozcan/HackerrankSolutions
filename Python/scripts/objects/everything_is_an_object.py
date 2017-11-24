@@ -1,0 +1,4 @@
+"""import words
+
+//type(words)
+"""
